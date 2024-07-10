@@ -25,21 +25,25 @@ This project is a web application built using [Streamlit](https://streamlit.io/)
    ```
    git clone https://github.com/linuztx/imageine.git
    ```
-2. Install the required dependencies:
+2. Navigate to the Project Directory:
+   ```
+   cd imageine
+   ```
+3. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
-3. Set your API keys and endpoint URLs in a `.secrets` file:
+4. Set your API keys and endpoint URLs in a `.secrets` file:
    ```
    AI_IMAGE_ENDPOINT=<your-image-generation-api-endpoint>
    API_KEY=<your-api-key>
    AI_ENDPOINT=<your-zephyr-7b-beta-api-endpoint>
    ```
-4. Run the Streamlit app:
+5. Run the Streamlit app:
    ```
    streamlit run main.py
    ```
-5. Open the app in your browser using the displayed URL
+6. Open the app in your browser using the displayed URL
    ```
    Local URL: http://localhost:8501
    ```
