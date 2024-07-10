@@ -1,6 +1,6 @@
 # Image Generator with Prompt Improvement
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/your-username/image-generator/main.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io)
 
 ## Description
 
@@ -23,7 +23,7 @@ This project is a web application built using [Streamlit](https://streamlit.io/)
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/image-generator.git
+   git clone https://github.com/linuztx/imageine.git
    ```
 2. Install the required dependencies:
    ```
