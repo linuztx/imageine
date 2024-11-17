@@ -1,49 +1,115 @@
-# Image Generator with Prompt Improvement
+<div align="center">
+
+# 🎨 AI Image Generator
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-green.svg)](https://openai.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Description
+Transform your text descriptions into stunning visuals using AI technology.
 
-This project is a web application built using [Streamlit](https://streamlit.io/) that combines image generation with AI-assisted prompt improvement. The app leverages an external image generation API and a language model called Zephyr-7b-Beta to create detailed and imaginative images based on user input.
+![imageine](https://github.com/user-attachments/assets/fea57fac-8586-4f25-aaae-058e414fe685)
 
-### Features
+</div>
 
-1. **User-friendly Interface:** The Streamlit app provides a simple and intuitive interface for users to enter their image prompts.
-2. **Prompt Improvement:** The app enhances user prompts using the Zephyr-7b-Beta language model, ensuring more descriptive and specific inputs for the image generation model.
-3. **Image Generation:** The improved prompt is sent to an AI image generation API, which returns a high-quality image that matches the enhanced description.
-4. **Download and Refresh:** Users can download the generated image and refresh the app to start a new image generation session.
+## 🚀 Demo
 
-### Dependencies
+Visit live demo at: [AI Image Generator Demo](https://imageine.streamlit.app/)
 
-- [Streamlit](https://streamlit.io/)
-- [requests](https://docs.python-requests.org/en/master/)
-- [datetime](https://docs.python.org/3/library/datetime.html)
+## ✨ Features
 
-### Usage
+### 🎯 Core Features
+- **AI-Powered Image Generation**: Create stunning visuals using any OpenAI Compatible image model
+- **Smart Prompt Enhancement**: Improve your prompts with any OpenAI Compatible chat model
+- **Real-time Processing**: Watch your ideas come to life instantly
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/linuztx/imageine.git
-   ```
-2. Navigate to the Project Directory:
-   ```
-   cd imageine
-   ```
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-4. Set your API keys and endpoint URLs in a `.secrets` file:
-   ```
-   AI_IMAGE_ENDPOINT=<your-image-generation-api-endpoint>
-   API_KEY=<your-api-key>
-   AI_ENDPOINT=<your-zephyr-7b-beta-api-endpoint>
-   ```
-5. Run the Streamlit app:
-   ```
-   streamlit run main.py
-   ```
-6. Open the app in your browser using the displayed URL
-   ```
-   Local URL: http://localhost:8501
-   ```
+### 💫 User Experience
+- **Intuitive Interface**: Clean, modern design with responsive layout
+- **Progress Tracking**: Real-time generation progress indicators
+- **Quick Actions**: One-click download and regeneration options
+
+### 🛠️ Technical Features
+- **OpenAI Integration**: Leverages latest AI models
+- **Docker Support**: Easy deployment with containerization
+
+## 📦 Installation
+
+### Prerequisites
+- Python 3.9+
+- OpenAI API key
+- Docker (optional)
+
+### Quick Start
+```bash
+# Clone the repository
+git clone https://github.com/linuztx/imageine.git
+
+# Navigate to project directory
+cd imageine
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your API keys
+
+# Run the application
+streamlit run main.py
+```
+
+### 🐳 Docker Installation
+```bash
+# Build the image
+docker build -t imageine .
+
+# Run the container
+docker run -p 8501:8501 imageine
+```
+
+## 🎯 Usage
+
+### Basic Usage
+1. Enter your image description
+2. (Optional) Enable prompt enhancement
+3. Click "Generate Image"
+4. Download or regenerate as needed
+
+### 🎨 Writing Effective Prompts
+- Be specific about desired elements
+- Include style preferences
+- Mention lighting and composition
+- Reference artistic influences
+
+### ⚙️ Configuration
+```env
+# Chat Generation API
+AI_CHAT_ENDPOINT=your-chat-generation-endpoint
+AI_CHAT_API_KEY=your-chat-api-key
+
+# Image Generation API
+AI_IMAGE_ENDPOINT=your-image-generation-endpoint
+AI_IMAGE_API_KEY=your-image-api-key 
+
+# Model
+AI_CHAT_MODEL=your-model-here
+AI_IMAGE_MODEL=your-image-model-here
+```
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💝 Donations
+
+If you find this project useful, consider supporting my work by making a donation. Every contribution helps me continue developing and maintaining this project.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/linuztx)
+
+
+---
+
+<div align="center">
+Made with ❤️ using Streamlit | © 2024 AI Image Generator
+</div>
